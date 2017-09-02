@@ -1,0 +1,172 @@
+/* --------------  Medium Layout: 1280px. -------------------- */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+ .contact-img img {
+  margin-left: 20px;
+  width: 230px;
+}
+#reviews-carousel::before {
+  left: -50px;
+}
+.main-menu {
+  padding-right: 105px;
+}
+
+
+    
+}
+
+
+/* ------------------  Tablet Layout: 768px  ---------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.main-menu {
+  padding-right: 70px;
+}
+.main-menu ul.nav.navbar-nav li {
+  float: left;
+}
+.logo {
+  margin-bottom:5px;
+  text-align: center;
+}
+.logo a img {
+  height: 80px;
+}
+.header-content h2 {
+  font-size: 50px;
+}
+.header-content {
+  padding-top: 25%;
+}
+.foodPlate-img {
+  margin-top: 20px;
+  text-align: center;
+}
+.contact-img {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.contact-form input[type="text"], .contact-form select {
+  border: 1px solid #c9a131;
+  margin-bottom: 25px;
+  padding: 5px;
+  width: 100%;
+}
+#reviews-carousel::before {
+  left: -40px;
+}
+
+    
+}
+
+
+/*----------------  Mobile Layout: 320px. ------------------*/
+@media only screen and (max-width: 767px) { 
+.main-menu {
+  padding-right: 0;
+  padding-top: 20px;
+
+}
+
+.navbar-header {
+    position: absolute;
+    right: 20px;
+    top: -60px;
+}
+
+.navbar-toggle {
+  float: none;
+  margin: 0;
+  border:1px solid #fff;
+}
+.navbar-toggle .icon-bar {
+  background: #fff none repeat scroll 0 0;
+}
+.social-links {
+  right:20px;
+  top: -15px;
+}
+
+.is-sticky .navbar-header {
+    top: -55px;
+}
+
+.is-sticky .social-links {
+  top: -12px;
+}
+.main-menu ul.nav.navbar-nav li.active::before {
+  height: 0px;
+}
+.navbar-collapse {
+  border-top: 10px solid transparent;
+}
+
+
+.main-menu-toggle ul.nav.navbar-nav {
+    background: #333;
+}
+.main-menu-toggle ul.nav.navbar-nav li {
+    display: block;
+    text-align: center;
+}
+.main-menu-toggle ul.nav.navbar-nav li a {
+    border-bottom: 1px solid #444;
+    padding:20px;
+}
+.main-menu-toggle ul.nav.navbar-nav li:last-child a {
+    border-bottom: medium none;
+}
+.main-menu-toggle .navbar-collapse{
+	box-shadow: 0 0 0;
+}
+.header-content h2 {
+  font-size:35px;
+}
+.white-color {
+  font-size: 14px;
+  margin: 0 10px;
+  padding:10px 15px;
+}
+.btn-filled {
+  font-size: 14px;
+  margin: 0px;
+  padding: 10px 15px;
+}
+.ingredients-area-bg {
+ background-size:auto;
+}
+.ingredients-content > p {
+  font-size: 14px;
+}
+.reviews-content {
+  padding: 50px 75px;
+}
+.reviews-area-bg {
+  background-size: auto auto;
+}
+.reviews-content P{
+	font-size: 15px;
+}
+#reviews-carousel::before {;
+  left: -40px; 
+}
+.contact-img {
+  text-align: center;
+}
+.contact-img img {
+  margin-bottom: 30px;
+}
+.footer-widget {
+  margin-bottom: 49px;
+}
+
+ 
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+
+
+}

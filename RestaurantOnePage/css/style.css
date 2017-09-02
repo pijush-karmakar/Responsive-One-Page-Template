@@ -1,0 +1,445 @@
+
+/* Base CSS */
+
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100% ;font-size: 16px;}
+
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+/* ----------  Section Css start --------------   */
+
+/* ------  for sticky header --------------*/
+
+.sticky-wrapper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:9999;
+}
+.is-sticky .header-area::after {
+    background: #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity:0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.is-sticky .logo a img {
+  height: 65px;
+  padding: 5px 0;
+  width: auto;
+}
+
+.is-sticky .main-menu ul.nav.navbar-nav li a {
+    padding: 22px 15px;
+}
+.is-sticky .social-links {
+    top: 20px;
+}
+.is-sticky .main-menu ul.nav.navbar-nav li.active a{
+  color:#cc9900; 
+}
+.header-area::after,.logo a img,.main-menu ul.nav.navbar-nav li a,.social-links{transition: 0.5s;}
+
+/* ------  End sticky header --------------*/
+
+
+/* -----  Start slider style ----------- */
+
+.slider-bg-1{background-image:url(../images/ingrid.jpg); }
+.slider-bg-2{background-image:url(../images/hero-bg.jpg);}
+
+.top-area-bg{ 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#cc9900;
+}
+
+.slide-control {
+    color: #fff;
+    font-size: 50px;
+    left: 30px;
+    margin-top: -50px;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    transition: all 0.3s ease 0s;
+}
+.slide-control:focus{color: #fff;}
+.slide-control.right {
+    left: auto;
+    right: 30px;
+}
+.slide-control:hover {
+    color:#cc9900;
+    opacity: 1;
+}
+
+
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+/* -----  End slider style ----------- */
+
+
+
+#top-area {
+    position: relative;
+}
+
+.logo a img{
+  height: 90px;
+}
+.header-content {
+  padding-bottom: 80px;
+  padding-top: 180px;
+  position: relative;
+  height: 100%;
+}
+
+.header-content h2 {
+  background:url("../images/line-symble.png") no-repeat scroll center bottom;
+  color: #fff;
+  font-size: 65px;
+  margin-bottom: 35px;
+  padding-bottom: 75px;
+}
+.main-menu ul.nav.navbar-nav {
+    float: none;
+    font-size: 18px;
+    text-align: right;
+}
+.main-menu ul.nav.navbar-nav li {
+    display: inline-block;
+    float: none;
+    position: relative;
+}
+.main-menu ul.nav.navbar-nav li a {
+    color: #fff;
+    padding: 36px 15px;
+}
+.main-menu ul.nav.navbar-nav li a:focus, .main-menu ul.nav.navbar-nav li:hover a {
+  background:none;
+}
+
+.main-menu ul.nav.navbar-nav li.active::before {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.btn-filled {
+    color: #fff;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.btn-filled::after {
+    background: #1d2122 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    border:1px solid #111;
+}
+.white-color{
+     color: #fff;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.white-color::after{
+    background: #ddd none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    border:1px solid #fff;
+}
+
+
+.main-menu {
+    padding-right: 140px;
+    position: relative;
+}
+.social-links {
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+.social-links a {
+    color: #f8d15c;
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.about-area {
+    background: url(../images/restaurant-Recovered.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-padding{
+    padding:80px 0;
+}
+.section-title {
+  background:url("../images/sectitlePattern.png") no-repeat scroll center bottom;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  color:#cc9900;
+  text-align: center;
+}
+
+.author-photo {
+    padding-top: 25px;
+}
+.about-content {
+    padding-top: 30px;
+}
+
+.ingredients-area{
+    position: relative;
+}
+.ingredients-area-bg{ 
+  background-image: url(../images/ingrid.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ingredients-content {
+    color: #fff;
+    padding:16px;
+    position: relative;
+    z-index: 1;
+}
+.ingredients-content::after,.reviews-content::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.section-title.white{
+    background: url(../images/ingridTitle.png) no-repeat scroll center bottom;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.ingredients-content > p {
+    margin-bottom: 50px;
+}
+.ingredients-content > img {
+    padding-bottom: 25px;
+}
+
+.single-food-item > h2 {
+    border-bottom: 1px solid;
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: #cc9900;
+}
+.single-food-item > h2 span {
+    float: right;
+    font-size: 18px;
+    font-weight: normal;
+}
+.single-food-item {
+    margin-bottom: 40px;
+}
+
+.single-food-item.special {
+    border: 1px solid #d5b967;
+    padding: 5px;
+    position: relative;
+}
+.single-food-item.special::after {
+  background: #d5b967 none repeat scroll 0 0;
+  color: #fff;
+  content: "Special";
+  padding: 0 8px;
+  position: absolute;
+  right: -1px;
+  top: -23px;
+}
+.single-food-item > p {
+    font-size: 14px;
+    margin: 0;
+}
+.reviews-area{
+    position: relative;
+}
+
+.reviews-area-bg{background: url(../images/reviewbg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    
+}
+.reviews-content{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding:90px 120px;
+}
+
+.reviews-content p{
+ font-size: 18px;
+}
+.review-author{
+    font-size: 16px;
+    margin-top: 40px;
+}
+#reviews-carousel::before {
+  color: #979998;
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 28px;
+  left: -15px;
+  position: absolute;
+  top: -15px;
+}
+
+
+.contact-area {
+  background: url("../images/restaurant-Recovered.jpg") no-repeat scroll 0 0 / cover ;
+}
+.contact-img img {
+    margin-left: 25px;
+    width: 250px;
+}
+.contact-form {
+    text-align: left;
+     margin-top: 20px;
+}
+.contact-form input[type="text"], .contact-form select {
+    border: 1px solid #c9a131;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+.contact-form label {
+    color: #c9a131;
+}
+
+.contact-form button {
+    background: #c9a131 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    display: block;
+    margin: 15px auto 0;
+    padding: 5px;
+    width: 32%;
+}
+
+#footer-area{
+  background: #191919;
+  color: #f4f4f4;
+  padding: 40px 0;
+}
+#footer-area h2{
+  font-size: 20px;
+}
+
+.footer-cards {
+    margin-top: 40px;
+}
+.footer-cards a{
+  color: #fff;
+}
+.footer-cards i.fa {
+    padding: 4px;
+}
+.footer-social {
+    margin-top: 38px;
+}
+.footer-social a{
+    color: #fff;
+}
+.footer-social i.fa {
+    padding: 0 5px;
+}
